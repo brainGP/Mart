@@ -129,7 +129,7 @@ export default function Home() {
           Бидний түүх
         </p>
          <p className="text-center text-lg mt-2" style={{ background: "linear-gradient(90deg, #a1c4fd, #c2e9fb)", WebkitBackgroundClip: "text", color: "transparent" }}>
-           Happy women's day, хайраа
+         Happy women's day
         </p>
       
       </div>
@@ -220,7 +220,7 @@ export default function Home() {
       </div>
 
       {/* Right Section */}
-      <div className="w-1/2 flex items-center justify-center relative z-20">
+      <div className="w-1/2 top-40 flex items-center justify-center relative z-20">
         <motion.div key={current} initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="p-10 flex flex-col items-center justify-center text-center max-w-md sticky top-1/2 -translate-y-1/2 bg-black/20 rounded-xl">
           <h2 className="text-4xl font-bold mb-4" style={{ background: "linear-gradient(90deg, #ff9a9e, #fad0c4)", WebkitBackgroundClip: "text", color: "transparent" }}>
             {stations[current].title}
@@ -242,7 +242,7 @@ export default function Home() {
   <motion.button
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}
-    className="px-8 py-3 bg-pink-500 rounded-xl text-white font-bold hover:bg-green-400 shadow-lg transition"
+    className="px-8 py-3 bg-pink-500 rounded-xl text-white font-bold hover:bg-pink-400 shadow-lg transition"
     onClick={() => setShowLetter(true)}
   >
     Open

@@ -16,7 +16,7 @@ export default function LoveLetter({ onClose }: LoveLetterProps) {
   const [accessGranted, setAccessGranted] = useState(false);
   const letterRef = useRef<HTMLDivElement>(null);
 
-  const correctPassword = "1234";
+  const correctPassword = "247";
  const messages = {
    mn: {
       title: "Захидал",
