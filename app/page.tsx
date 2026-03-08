@@ -121,6 +121,18 @@ export default function Home() {
 
   return (
     <main className="flex h-screen w-full relative overflow-hidden transition-all duration-1000" style={{ background: stations[current].bgGradient }}>
+      <div className="absolute top-0 left-0 w-full h-full bg-black/20 backdrop-blur-sm z-0" >
+        <h1 className="text-5xl font-bold text-center pt-10" style={{ background: "linear-gradient(90deg, #ff9a9e, #fad0c4)", WebkitBackgroundClip: "text", color: "pink" }}>
+          2026.03.08
+        </h1>
+        <p className="text-center text-lg mt-2" style={{ background: "linear-gradient(90deg, #a1c4fd, #c2e9fb)", WebkitBackgroundClip: "text", color: "transparent" }}>
+          Бидний түүх
+        </p>
+         <p className="text-center text-lg mt-2" style={{ background: "linear-gradient(90deg, #a1c4fd, #c2e9fb)", WebkitBackgroundClip: "text", color: "transparent" }}>
+           Happy women's day, хайраа
+        </p>
+      
+      </div>
       {/* Left Map */}
       <div ref={containerRef} className="w-1/2 overflow-y-auto relative z-10">
         <motion.svg width="300" height="1200" className="mx-auto mt-20 relative z-10" animate={zoomControls}>
