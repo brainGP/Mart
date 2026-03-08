@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+font-family:sans-serif;
+background:#0f172a;
+color:white;
+margin:0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.container{
+max-width:700px;
+margin:auto;
+padding:20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:16px;
+margin-bottom:30px;
+}
+
+.photo{
+width:100%;
+border-radius:12px;
+margin-top:10px;
+}
+
+.timelineItem{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.proposal{
+text-align:center;
+margin-top:60px;
+}
+
+.yesBtn{
+background:#22c55e;
+border:none;
+padding:15px 30px;
+border-radius:10px;
+font-size:18px;
+margin-right:10px;
+}
+
+.noBtn{
+background:#ef4444;
+border:none;
+padding:15px 30px;
+border-radius:10px;
+font-size:18px;
+}
+
+.map{
+text-align:center;
+margin-bottom:40px;
+}
+
+.line{
+stroke-dasharray:600;
+stroke-dashoffset:600;
+animation:draw 3s forwards;
+}
+
+@keyframes draw{
+to{stroke-dashoffset:0}
+}
+
+@media(max-width:600px){
+
+.title{
+font-size:30px
+}
+
+.card{
+padding:18px
+}
+
 }
